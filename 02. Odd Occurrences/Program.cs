@@ -12,7 +12,7 @@ foreach (var word in words)
 	wordsCount[word]++;
 }
 
-wordsCount = wordsCount.Where(x => x.Value % 2 != 0).ToDictionary(x => x.Key,x => x.Value);
+wordsCount = wordsCount.Where(x => x.Value % 2 != 0).ToDictionary(x => x.Key, x => x.Value);
 
 foreach (var word in wordsCount)
 {
